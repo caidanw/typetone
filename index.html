@@ -4,15 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TypeTone - Jabberwocky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      body {
+        font-family: "IM Fell English", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
       main {
+        width: fit-content;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        line-height: 1.6;
       }
 
-      .poem > p > span {
+      header {
+        line-height: 1.5em;
+      }
+
+      header > p {
+      }
+
+      .stanza > span {
         display: block;
       }
-      .poem > p > span:nth-child(even) {
+      .stanza > span:nth-child(even) {
         margin-left: 4ch;
+      }
+
+      .source {
+        font-size: 0.8rem;
       }
     </style>
   </head>
@@ -22,52 +49,53 @@
         <header>
           <h1>Jabberwocky</h1>
           <p>By Lewis Carroll</p>
+          <hr />
         </header>
 
         <section class="poem">
-          <p>
+          <p class="stanza">
             <span>’Twas brillig, and the slithy toves</span>
             <span>Did gyre and gimble in the wabe:</span>
             <span>All mimsy were the borogoves,</span>
             <span>And the mome raths outgrabe.</span>
           </p>
 
-          <p>
+          <p class="stanza">
             <span>“Beware the Jabberwock, my son!</span>
             <span>The jaws that bite, the claws that catch!</span>
             <span>Beware the Jubjub bird, and shun</span>
             <span>The frumious Bandersnatch!”</span>
           </p>
 
-          <p>
+          <p class="stanza">
             <span>He took his vorpal sword in hand;</span>
             <span>Long time the manxome foe he sought—</span>
             <span>So rested he by the</span>
             <span>Tumtum tree And stood awhile in thought.</span>
           </p>
 
-          <p>
+          <p class="stanza">
             <span>And, as in uffish thought he stood,</span>
             <span>The Jabberwock, with eyes of flame,</span>
             <span>Came whiffling through the tulgey wood,</span>
             <span>And burbled as it came!</span>
           </p>
 
-          <p>
+          <p class="stanza">
             <span>One, two! One, two! And through and through</span>
             <span>The vorpal blade went snicker-snack!</span>
             <span>He left it dead, and with its head</span>
             <span>He went galumphing back.</span>
           </p>
 
-          <p>
+          <p class="stanza">
             <span>“And hast thou slain the Jabberwock?</span>
             <span>Come to my arms, my beamish boy!</span>
             <span>O frabjous day! Callooh! Callay!”</span>
             <span>He chortled in his joy.</span>
           </p>
 
-          <p>
+          <p class="stanza">
             <span>’Twas brillig, and the slithy toves</span>
             <span>Did gyre and gimble in the wabe:</span>
             <span>All mimsy were the borogoves,</span>
@@ -76,8 +104,10 @@
         </section>
 
         <footer>
+          <hr />
           <p class="source">
-            From "Through the Looking-Glass, and What Alice Found There," 1871
+            From "Through the Looking-Glass, and What Alice Found There,"
+            <b>1871</b>
           </p>
         </footer>
       </article>
